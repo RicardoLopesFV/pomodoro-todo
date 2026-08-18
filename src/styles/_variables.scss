@@ -1,0 +1,29 @@
+// _variables.scss -> organização da paleta de cores da aplicação
+
+// 1. Variáveis Literais (A paleta bruta do Catppuccin Macchiato)
+$macchiato-base: #24273a;
+$macchiato-mantle: #1e2030;
+$macchiato-surface0: #363a4f;
+$macchiato-text: #cad3f5;
+$macchiato-subtext0: #a5adcb;
+$macchiato-red: #ed8796; // Cor do botão principal
+$macchiato-mauve: #c6a0f6; // Acento secundário
+
+// 2. Fontes Padrão
+$plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+$jetbrains-mono: "JetBrains Mono", monospace;
+
+// 3. Tokens Semânticos (O "BEM" das cores que você usa nos componentes)
+$bg-main: $macchiato-base;
+$bg-sidebar: $macchiato-mantle;
+$border-color: $macchiato-surface0;
+
+$text-main: $macchiato-text;
+$text-secondary: $macchiato-subtext0;
+
+$action-primary: $macchiato-red;
+$action-hover: darken($macchiato-red, 10%);
+
+// 4. Fontes
+$font-primary: $plus-jakarta-sans;
+$font-secondary: $jetbrains-mono;
