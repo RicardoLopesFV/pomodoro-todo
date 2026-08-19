@@ -1,0 +1,9 @@
+@use "../../../styles/variables" as theme;
+
+.dashboard {
+  &__main {
+    padding: 2rem;
+    background-color: theme.$bg-main;
+    border-radius: 8px;
+  }
+}

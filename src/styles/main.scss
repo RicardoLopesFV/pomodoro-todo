@@ -7,8 +7,14 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%; // 1rem = 10px, 1.2rem = 12px, ...
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: $bg-main;
+  background-color: $bg-dashboard;
   color: $text-main;
   font-family: $font-primary;
+  font-size: 1.4rem;
 }
