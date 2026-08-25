@@ -16,11 +16,16 @@ export const Main = () => {
       <div className="main__tasks-container">
         <h3 className="main__tasks-title">Tasks ([Selected item])</h3>
         <div className="main__add-task-container">
-          <input className="main__input-text-tasks" type="text" name="text" id="text" />
+          <input className="main__input-add-task" type="text" name="text" id="text" />
           <button className="main__add-task-btn">
             <Plus />
           </button>
         </div>
+        <ul className="main__tasks-list">
+          <li className="main__task-item">Study React</li>
+          <li className="main__task-item">Gym</li>
+          <li className="main__task-item">Pharmacy</li>
+        </ul>
       </div>
     </main>
   );
