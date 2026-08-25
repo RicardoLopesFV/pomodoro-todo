@@ -1,0 +1,71 @@
+@use "../../styles/variables" as theme;
+
+.pomodoro-timer {
+  margin: 4rem auto 0;
+  width: 40rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 50%;
+  border: 3px solid theme.$macchiato-mauve;
+
+  &__counter {
+    font-size: 7rem;
+    font-family: theme.$font-secondary;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  &__btn {
+    font-family: theme.$font-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px transparent;
+
+    &--start {
+      background: theme.$gradient-bg-lavender-mauve;
+
+      &:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.1);
+        box-shadow: 0 6px 13px color-mix(in srgb, theme.$macchiato-mauve, transparent 90%);
+      }
+    }
+
+    &--stop {
+      color: theme.$macchiato-mauve;
+      background: none;
+      border: 1.5px solid theme.$macchiato-mauve;
+
+      &:hover {
+        transform: translateY(-1px);
+        background: color-mix(in srgb, theme.$macchiato-mauve, transparent 90%);
+      }
+    }
+
+    &--reset {
+      color: color-mix(in srgb, theme.$text-main, white 95%);
+      background-color: theme.$macchiato-red;
+
+      &:hover {
+        transform: translateY(-1px);
+        background-color: color-mix(in srgb, theme.$macchiato-red, black 15%);
+      }
+    }
+  }
+}

@@ -10,76 +10,6 @@
     text-align: center;
   }
 
-  &__pomodoro-timer-circle {
-    margin: 4rem auto 0;
-    width: 40rem;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    border-radius: 50%;
-    border: 3px solid theme.$macchiato-mauve;
-  }
-
-  &__timer-counter {
-    font-size: 7rem;
-    font-family: theme.$font-secondary;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-
-  &__timer-buttons {
-    display: flex;
-    gap: 1.25rem;
-  }
-
-  &__timer-btn {
-    font-family: theme.$font-secondary;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.75rem 2rem;
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 4px 10px transparent;
-
-    &--start {
-      background: theme.$gradient-bg-lavender-mauve;
-
-      &:hover {
-        transform: translateY(-1px);
-        filter: brightness(1.1);
-        box-shadow: 0 6px 13px color-mix(in srgb, theme.$macchiato-mauve, transparent 90%);
-      }
-    }
-
-    &--stop {
-      color: theme.$macchiato-mauve;
-      background: none;
-      border: 1.5px solid theme.$macchiato-mauve;
-
-      &:hover {
-        transform: translateY(-1px);
-        background: color-mix(in srgb, theme.$macchiato-mauve, transparent 90%);
-      }
-    }
-
-    &--reset {
-      color: color-mix(in srgb, theme.$text-main, white 95%);
-      background-color: theme.$macchiato-red;
-
-      &:hover {
-        transform: translateY(-1px);
-        background-color: color-mix(in srgb, theme.$macchiato-red, black 15%);
-      }
-    }
-  }
-
   &__tasks-container {
     max-width: 60rem;
     width: 100%;
@@ -87,26 +17,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   &__tasks-title {
     font-size: 2rem;
   }
 
-  &__add-task-container {
+  &__tasks-list {
+    width: 100%;
+    list-style: none;
     display: flex;
-    gap: 1rem;
-    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  &__input-add-task {
+  &__task-item {
     width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid color-mix(in srgb, theme.$macchiato-base, white 10%);
   }
 
-  &__add-task-btn {
-    width: 30px;
-    height: 30px;
-    border: none;
+  &__task-content,
+  &__task-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
 }

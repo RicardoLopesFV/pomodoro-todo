@@ -42,7 +42,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 html {
   font-size: 62.5%; // 1rem = 10px, 1.2rem = 12px, ...
-  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
