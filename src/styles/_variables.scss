@@ -7,7 +7,8 @@ $macchiato-surface0: #363a4f;
 $macchiato-text: #cad3f5;
 $macchiato-subtext0: #a5adcb;
 $macchiato-red: darken(#ed8796, 16%); // Cor do botão principal
-$macchiato-mauve: #c6a0f6; // Acento secundário
+$macchiato-mauve: #c6a0f6;
+$macchiato-lavender: #b7bdf8;
 
 // 2. Fontes Padrão
 $plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
@@ -24,6 +25,9 @@ $text-secondary: $macchiato-subtext0;
 
 $action-primary: $macchiato-red;
 $action-hover: darken($macchiato-red, 5%);
+
+$gradient-bg-mauve: linear-gradient(90deg, rgba($macchiato-mauve, 0.4) 0%, transparent 100%);
+$gradient-bg-lavender-mauve: linear-gradient(90deg, $macchiato-lavender 0%, $macchiato-mauve 100%);
 
 // 4. Fontes
 $font-primary: $plus-jakarta-sans;

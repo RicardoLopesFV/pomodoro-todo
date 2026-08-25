@@ -1,47 +1,15 @@
-import { Inbox, CalendarFold, CalendarDays, CalendarClock, Search, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import "./Sidebar.scss";
+import { SidebarHeader } from "./components/SidebarHeader";
+import { SidebarSearch } from "./components/SidebarSearch";
+import { SidebarNavigation } from "./components/SidebarNavigation";
 
 export const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <div className="sidebar__header">
-        <div className="sidebar__user-name-container">
-          {/* User Icon */}
-          <h3 className="sidebar__user-name">User name</h3>
-        </div>
-        <div className="sidebar__actions-container">
-          {/* Action Icon */}
-          {/* Action Icon */}
-        </div>
-      </div>
-      <div className="sidebar__search-box">
-        <Search size={20} />
-        <input
-          className="sidebar__input-search"
-          type="search"
-          name="search-input"
-          id="search-input"
-          placeholder="Search"
-        />
-      </div>
-      <ul className="sidebar__mail-list">
-        <li className="sidebar__mail-item">
-          <Inbox size={20} />
-          Inbox
-        </li>
-        <li className="sidebar__mail-item">
-          <CalendarFold size={20} />
-          Today
-        </li>
-        <li className="sidebar__mail-item">
-          <CalendarDays size={20} />
-          Tomorrow
-        </li>
-        <li className="sidebar__mail-item">
-          <CalendarClock size={20} />
-          Upcoming
-        </li>
-      </ul>
+      <SidebarHeader />
+      <SidebarSearch />
+      <SidebarNavigation />
       <button className="sidebar__add-task-btn">
         Add task
         <Plus size={20} color="#cad3f5" />
