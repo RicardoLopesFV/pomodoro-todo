@@ -1,0 +1,26 @@
+@use "../../../styles/variables" as theme;
+
+.task-item {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid color-mix(in srgb, theme.$macchiato-base, white 10%);
+
+  &__content,
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    svg {
+      transition: all 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+  }
+}

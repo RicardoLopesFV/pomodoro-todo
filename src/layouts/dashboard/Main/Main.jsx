@@ -6,10 +6,10 @@ import { AddTask } from "../../../features/AddTask/Addtask";
 export const Main = () => {
   return (
     <main className="main">
-      <h1 className="main__focus">Focus: [Selected Item]</h1>
+      <h1 className="main__focus">Focus: Inbox</h1>
       <PomodoroTimer />
-      <div className="main__tasks-container">
-        <h3 className="main__tasks-title">Tasks ([Selected item])</h3>
+      <div className="main__container">
+        <h3 className="main__tasks-focus">Tasks: Inbox</h3>
         <AddTask />
         <Tasks />
       </div>

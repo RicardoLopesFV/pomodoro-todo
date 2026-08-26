@@ -1,8 +1,8 @@
 import { Main } from "./Main/Main";
 import { Sidebar } from "./Sidebar/Sidebar";
-import "./DashboardLayout.scss";
+import "./Dashboard.scss";
 
-export const DashboardLayout = () => {
+export const Dashboard = () => {
   return (
     <div className="dashboard">
       <Sidebar />

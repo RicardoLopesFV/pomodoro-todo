@@ -39,6 +39,7 @@
 
     &--start {
       background: theme.$gradient-bg-lavender-mauve;
+      color: color-mix(in srgb, theme.$text-main, white 95%);
 
       &:hover {
         transform: translateY(-1px);

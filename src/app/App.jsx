@@ -1,5 +1,5 @@
-import { DashboardLayout } from "../layouts/dashboard/DashboardLayout";
+import { Dashboard } from "../layouts/Dashboard/Dashboard";
 
 export const App = () => {
-  return <DashboardLayout />;
+  return <Dashboard />;
 };
